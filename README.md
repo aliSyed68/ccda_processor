@@ -1,3 +1,8 @@
+## Installation
+```buildoutcfg
+pip install ccda-processor
+```
+
 ## Usage
 ```python
 import ccda_processor
@@ -10,4 +15,10 @@ processsor.convert()
 processing...
 finished...
 total count of patient records: 2987
+```
+
+
+## Uninstall
+```buildoutcfg
+pip uninstall ccda-processor
 ```
