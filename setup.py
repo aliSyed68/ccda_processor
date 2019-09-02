@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="ccda_processor",
-    version="0.0.4",
+    version="0.0.5",
     author="Ali H Syed",
     author_email="",
     description="A light-weight package to process a compressed file of CCDA ccda_processor records and convert to 1 web page per patient record",
