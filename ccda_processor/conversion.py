@@ -9,6 +9,7 @@ class CCDA():
         self.outputDirectory = outputDirectory
 
     def convert(self):
+        print("processing...")
         with gzip.open(self.pathToInputArtifact, 'rt') as f:
             count = 0
             input = f.read()
@@ -47,9 +48,8 @@ class CCDA():
                 with open('{}/{}.html'.format(self.outputDirectory, name), 'w+') as h:
                     h.write(html)
                 count += 1
-                print("document number: {}".format(count + 1))
-                print("other names: {}".format(other))
-                print("first name: {}".format(first))
+
+            print("finished...")
             print("total count of patient records: {}".format(count))
 
 
